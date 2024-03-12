@@ -41,7 +41,7 @@ nextAndErrorObservable.subscribe({
 
 # # The second step, unsubscribe
 
-For this part, please refer to `Subscription`. We can only unsubscribe asynchronous source, but not synchronous source.
+For "unsubscribe", some advanced concepts might need to refer to `Subscription`. We can only unsubscribe asynchronous source, but not synchronous source.
 
 ```js
 import { fromEvent } from 'rxjs';
@@ -55,3 +55,22 @@ clickSubscription.unsubscribe();
 ```
 
 # # The third step, pipe
+
+# # Error handling
+
+When there is error thrown directly inside (first callstack) the "subscribe" function, if error handler defined in the observer, the error will be emited to the error handler function. If no error handler defined in the observer, then the error will be thrown asynchronously to the global.
+
+```js
+const hasErrorObservable = new Observable((observer) => {
+  observer.next(1);
+
+  throw new Error('Error before emitting values');
+
+  observer.next(2);
+});
+
+const handleErrorObserver = {
+  next: (next) => console.log(`next value: `, next),
+  error: (err) => console.log(`err: `, err),
+};
+```
