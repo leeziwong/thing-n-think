@@ -1,3 +1,7 @@
+## 2024-06-03T09:56:53.234+08:00 "playwright" test isolation with Browser Context
+
+By isolating tests with Browser Context, we don't need to manually clean up between tests, and it's good for some features like visted links.
+
 ## 2024-06-01T15:46:44.171+08:00 delightful "playwright" and "luxon"
 
 ### playwright
