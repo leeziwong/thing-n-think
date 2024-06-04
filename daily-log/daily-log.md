@@ -1,3 +1,9 @@
+## 2024-06-04T22:42:17.938+08:00 createPortal, CSS specificity and CSS-in-JS and micro-frontend
+
+createPortal is useful for integrating React application with static HTML element.
+
+When using CSS-in-JS and micro-frontend together, it's necessary pay attention to how the CSS-in-JS handles CSS specificity, otherwise it might cause specificity issue between different micro-frontend apps.
+
 ## 2024-06-03T09:56:53.234+08:00 "playwright" test isolation with Browser Context
 
 By isolating tests with Browser Context, we don't need to manually clean up between tests, and it's good for some features like visted links.
