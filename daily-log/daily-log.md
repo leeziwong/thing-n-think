@@ -1,3 +1,9 @@
+## 2024-06-09T23:47:42.119+08:00 WebAssembly "hello world"
+
+Started reading a book about working with WebAssembly with "WAT". "WAT" looks familiar with me, for I have used it more than a decade ago to write a very simple project. But it's kind of boring and verbose at first sight.
+
+Today also got to know two a11y tools for automation testing, which are `accessibility-checker` an `@axe-core/playwright`. Just starting, let's see the difference of features later.
+
 ## 2024-06-07T21:20:29.922+08:00 aria-label, focus element and accessibility
 
 For a11y requirements, we need to keep the UI presentation and semantic structure equal and in sync. Focus management for such as newly inserted input fields to help screen readers better navigate.
