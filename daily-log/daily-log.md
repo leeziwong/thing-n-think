@@ -1,3 +1,11 @@
+## micro-frontend and rem, lottie json animation
+
+When we use `rem` as unit in mirco-frontend app, we can't set it with a fixed base, it needs to be able to set by host app.
+
+And setting the root font-size to 10px by applying 62.5% to default 16px will make the scale behavior of browser not so significant as default, should avoid that.
+
+Learned "lottie" json file storing animation data today.
+
 ## 2024-06-09T23:47:42.119+08:00 WebAssembly "hello world"
 
 Started reading a book about working with WebAssembly with "WAT". "WAT" looks familiar with me, for I have used it more than a decade ago to write a very simple project. But it's kind of boring and verbose at first sight.
